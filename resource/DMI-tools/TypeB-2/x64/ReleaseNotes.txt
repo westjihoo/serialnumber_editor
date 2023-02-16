@@ -1,0 +1,257 @@
+﻿Insyde H2OSDE(SMBIOS Data Editor) Utility.
+Provide user to get or set SMBIOS information.
+
+Version 200.01.00.05 (2020/06/04)
+--------------------------------------------------------------------------------
+1) New:
+ - [Windows][Console] New generating UUID by algorithm1.
+
+Version 200.01.00.04 (2019/12/15)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [Shell] The offset is incorrect of Ending Address for Type 20 [ITS#48101]
+ - [Shell] Fix failed when clear SMBIOS/DMI system event log. [ITS#49326]
+ - [Shell] The format of error message is not synchronization [ITS#43970]
+
+2) New:
+ - [DOS][Windows][Linux] SMBIOS 3.1/3.2 supported. [ITS#43949 43925]
+ - [Shell] Add -CF command support(Import command from file). [ITS#48104]
+
+Version 200.01.00.03 (2019/11/07)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [Shell] SMBIOS version display incorrect.
+ - [Shell] Typo erro.
+
+2) New:
+ - [Shell] SMBIOS 3.1/3.2 supported.
+
+Version 200.01.00.02 (2019/10/30)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [GUI] Append SMBIOS type 43 information.
+ - [GUI] No common header in unknown type.
+ - [GUI] Writing string to incorrect type field
+
+2) New:
+ - [Shell] New command -BVDR, -BVER, -BRLS for Type 0, -SCO for Type 12.
+
+Version 200.01.00.01 (2019/09/06)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [GUI] String incorrect in Type 2, 3, 4, 13, 14, 15, 17.
+ - [Linux][GUI] Launch GUI failed.
+ - [GUI][Console] Sync the error message.
+ - [Windows][Console] Handle not found and no data display.
+
+2) New:
+ - [Console] New command -VDR for Type 0, -SCO for Type 12
+ - [GUI] More information in the string panel.
+ - [DOS][Windows][Linux] Support null-string writing.
+
+Version 200.01.00.00 (2019/08/22)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [Windows] Tool un-response sometimes.
+
+Version 200.00.00.08 (2019/08/02)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [GUI] Type 127 missing.
+ - [GUI] Type 127 title show UNKNOWN.
+ - [GUI][Console] Type 15 informaiton miss match.
+ - [Console] Sometimes the number of Type append "0"
+ - [Console] Show unsupport warning message when unsupport clear GPNV
+
+2) New:
+ - [Windows] Refine the windows driver
+
+Version 200.00.00.07 (2019/05/15)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [Windows] Ensure the driver will be unloaded when the program is about to exit.
+ - [DOS] H2OSDE is not working on AMD platform
+ - [GUI] Add the missing table - Type 127.
+
+Version 200.00.00.06 (2019/05/09)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [Windows] Stop unload driver in H2OSDE.
+
+Version 200.00.00.05 (2019/04/23)
+--------------------------------------------------------------------------------
+1) Fix:
+ - Run SDE tool in a For-Loop may get an LoadDriver exception.
+
+Version 200.00.00.04 (2018/12/14)
+--------------------------------------------------------------------------------
+1) Fix:
+ - [Console] Command(-BRLS) help String.
+ - [Console] '-SV' Command cannot accept double-type as a value.
+ - [Console] 'Command -W H=1 S=3 V=2.2' does Not work.
+
+Version 200.00.00.03 (2018/11/16)
+--------------------------------------------------------------------------------
+1) New:
+ - Update error message when GPNV is not support.
+ - Add new command(-BVER, -BRLS) to update Type 0 string.
+
+Version 200.00.00.02 (2018/10/19)
+--------------------------------------------------------------------------------
+1)
+ - Fix BSOD when use one command repeatedly.
+
+Version 200.00.00.01 (2018/6/28)
+--------------------------------------------------------------------------------
+1) New:
+ - Support Copper Point Feature
+ - Add subitems in type 4 and type 15 to meet SMBIOS 3.0 spec.
+
+Version 100.00.07.19 (2018/1/22)
+--------------------------------------------------------------------------------
+1) New:
+ - [Console] Add new command "-SHUTDOWN" & "-REBOOT" to turn off or restart machine.
+
+Version 100.00.07.18 (2018/1/3)
+--------------------------------------------------------------------------------
+1) New:
+ - [Console] Add new command "-CSKU" to modify the SKU number in type 3.
+ - [Windows] Upgrade driver(100.00.09.00).
+
+Version 100.00.07.17 (2017/9/5)
+--------------------------------------------------------------------------------
+1) New:
+ - [Windows] Upgrade driver(100.00.08.00), support the ACPI command buffer.
+
+2) Fix issue:
+ - [Windows][Linux][Dos] Only the least significant byte changed after the filed is set for the DWORD filed.
+ - [Windows][Linux][Dos] Mark "System Configuration Options" as updatable when the type is set to be editable.
+
+Version 100.00.07.15 (2017/06/09)
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - [Windows][Linux][Dos] Allow user to modify "BIOS Release Date" in Type 0 in which the BIOS set the field is updatable.
+
+Version 100.00.07.14 (2017/03/21)
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - [Console] Update OEM string in binary image failed when there is no type 11 in the execution environment.
+
+Version 100.00.07.13 (2017/03/20)
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - [Console] Update the period of copyright statement.
+2) New Feature:
+ - Add GUI tool to read SMBIOS data.
+
+Version 100.00.07.12 (2016/12/06)
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - [Windows][Linux][Dos] Unable to modify OEM string within binary file, where the number of OEM strings is less than image file.
+ - [Windows][Linux][Dos] Remove PnP number in menu page.
+2) New Feature:
+ - [Windows][Linux][Dos] Display raw data to each of handle.
+
+
+Version 100.00.07.11 (2016/07/01)
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - [Windows][Linux][Dos] Show SMBIOS 3.0 fields only when platform provides necessary information.
+
+Version 100.00.07.10 (2016/04/28)
+--------------------------------------------------------------------------------
+1) New Feature:
+ - [Windows][Linux][Dos] To support SMBIOS 3.0 SPEC.
+
+Version 100.00.07.09
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - [Windows][Linux][Dos] Update UUID generate algorithm to avoid highly rate of identical UUID.
+
+Version 100.00.07.08
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - [Linux] Fix "Quote parameter not work".
+
+Version 100.00.07.07
+--------------------------------------------------------------------------------
+1) Fix issue:
+ - Run as administrator, driver initialized failed when the second to execute H2OSDE.
+
+H2OSDE version 100.00.07.02
+--------------------------------------------------------------------------------
+1) Upgrade generate_uuid_string()
+
+H2OSDE version 100.00.07.01
+--------------------------------------------------------------------------------
+1) Fix dump DMI store issue
+2) Fix get GPNV information issue
+3) Modify TUI string
+
+H2OSDE version 100.00.07.00
+--------------------------------------------------------------------------------
+1) Fix alignment of display GPNV data.
+2) Fix display format of base address in SMBIOS information.
+3) Fix some layout issue of GPNV editor and listing event logs.
+
+H2OSDE version 100.00.01.01
+--------------------------------------------------------------------------------
+1) Fix wrong byte order display of SMBIOS base address. (Function 1 of UI mode)
+2) Error words of GPNV data.
+3) -F command does not work.
+4) command : H2OSDE -O [File] [H=|T=0] does not work.
+5) There is an error wording in the help information like “Relpace DMI information string”. (should be "Replace")
+6) The title of the SMBIOS information cannot align with separator.
+7) -L command does not work.
+8) Fix a typo bug. (-L command define)
+
+H2OSDE version 100.00.01.00
+--------------------------------------------------------------------------------
+1) Sharing source code.
+2) Merge UI the same with windows version.
+
+H2OSDE version 100.00.00.08
+--------------------------------------------------------------------------------
+1) Update asset tag support 63 bytes, support BIOS after trunk 4.7 (tag 0.1.1).
+
+H2OSDE version 100.00.00.07
+--------------------------------------------------------------------------------
+1) Update FRU access
+2) Add SMBIOS 2.8 information on type 17
+
+H2OSDE version 100.00.00.06
+--------------------------------------------------------------------------------
+1) Rebuild in old glibc
+2) Replace copyright string
+
+LDMI version 100.00.00.05
+--------------------------------------------------------------------------------
+1) Add FRU feature
+
+LDMI version 100.00.00.04
+--------------------------------------------------------------------------------
+1) Replace utility name from ldmi to h2osde
+
+LDMI version 100.00.00.03
+--------------------------------------------------------------------------------
+Update:
+1) Modify driver support <= 2.6.3.26
+
+LDMI version 100.00.00.02
+--------------------------------------------------------------------------------
+Update:
+1) Modify DA function check return rule.
+2) Add short option -DA, -DS, -DP and -GPNV.
+
+LDMI version 100.00.00.01
+--------------------------------------------------------------------------------
+Update:
+1) Add short option -OS.
+2) Add auto generate UUID.
+3) Modify Help information and add ReadMe.txt
+
+LDMI version 100.00.00.00
+--------------------------------------------------------------------------------
+Update:
+1) Add short option to read/write DMI informaiton.
+2) Apply configuration file output/input function.

@@ -1,0 +1,92 @@
+{
+	"ASROCK": {
+		"index_1" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"ASUS": {
+		"index_1" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"ECS": {
+		"index_1" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"MSI": {
+		"index_1" : {
+			"folder": "TypeA-3",
+			"exe": "AMIDEWIN527.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"MICRO-STAR": {
+		"index_1" : {
+			"folder": "TypeA-3",
+			"exe": "AMIDEWIN527.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"BIOSTAR": {
+		"index_1" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"GIGABYTE": {
+		"index_1" : {
+			"folder": "TypeC-2",
+			"exe": "WinDmi_64.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"TONGFANG_AMI": {
+		"index_1" : {
+			"folder": "TypeA-4",
+			"exe": "AMIDEWINx64.exe"
+		},
+		"index_2" : {
+			"folder": "TypeA-1",
+			"exe": "AMIDEWINx64.exe"
+		}
+	},
+	"CLEVO": {
+		"index_1" : {
+			"folder": "TypeB-2",
+			"exe": "H2OSDE-Wx64.exe"
+		},
+		"index_2" : {
+			"folder": "TypeB-1",
+			"exe": "H2OSDE-Wx64.exe"
+		}
+	}
+}
